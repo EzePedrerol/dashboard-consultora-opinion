@@ -2,7 +2,7 @@
 
 Trabajo práctico integrador de **Ingeniería en Sistemas Informáticos (Universidad Abierta Interamericana)**. Se desarrollaron y compararon dos dashboards sobre el mismo caso: uno **estático** (alimentado desde un CSV) y otro **dinámico** (conectado a **SQL Server** en modo **DirectQuery**).
 
-> \*\*Trabajo grupal (Grupo 4).\*\* Mi rol: \*\*integración de los datos en Power BI, declaración de las medidas DAX y construcción completa de los dashboards.\*\* El modelo de datos, el análisis y la documentación se hicieron en equipo. Se usó Claude (Anthropic) como asistente durante el diseño y la implementación, como se detalla en el informe.
+> Trabajo grupal (Grupo 4). Mi rol: integración de los datos en Power BI, declaración de las medidas DAX y construcción completa de los dashboards. El modelo de datos, el análisis y la documentación se hicieron en equipo. Se usó Claude (Anthropic) como asistente durante el diseño y la implementación, como se detalla en el informe.
 
 ## El problema
 
@@ -50,15 +50,15 @@ Para verificar que el dashboard es dinámico, se insertaron en SQL Server 300 en
 
 ```
 
-\*\*Facturacion\*\* = SUM ( hechos\_relevamiento\[importe\_facturado] )
+Facturacion = SUM ( hechos\_relevamiento\[importe\_facturado] )
 
-\*\*Costo\_total\*\* = SUM ( hechos\_relevamiento\[costo\_encuesta] )
+Costo_total = SUM ( hechos\_relevamiento\[costo\_encuesta] )
 
-\*\*Margen\*\* = \[Facturacion] - \[Costo\_total]
+Margen = [Facturacion] - [Costo\_total]
 
-\*\*Tasa\_de\_efectividad\*\* = DIVIDE ( \[Encuestas\_completas], \[Intentos] )
+Tasa\_de\_efectividad = DIVIDE ( \[Encuestas\_completas], \[Intentos] )
 
-\*\*Costo desperdiciado %\*\* = 
+Costo desperdiciado % = 
 
 DIVIDE (
 
@@ -68,9 +68,7 @@ DIVIDE (
 
 )
 
-\*\*Anio\*\* = QUOTIENT ( hechos\_relevamiento\[COD\_fecha], 10000 )
-
-]
+Anio = QUOTIENT ( hechos\_relevamiento\[COD\_fecha], 10000 )
 ```
 
 Los datos son **sintéticos**, generados con fines académicos.
