@@ -29,13 +29,13 @@ Power BI se conecta directamente a la base `ConsultoraOpinionDW`, de modo que lo
 
 **Qué hice:** conexión al servidor y la base, selección de tablas, modelo de relaciones, medidas DAX (Facturación, Costo total, Margen, Tasa de efectividad, Costo desperdiciado %), una columna calculada `Anio` y el armado de todas las visualizaciones: tarjetas de KPI, evolución anual, margen por canal con formato condicional, ranking de encuestadores y resultado de intentos por canal.
 
-!\[Conexión a SQL Server](capturas/conexion\_sqlserver.png)
-!\[Modelo de datos](capturas/dinamico\_modelo.png)
-!\[Dashboard antes de la carga](capturas/dinamico\_dashboard\_antes.png)
+!\[Conexión a SQL Server][`capturas/`](capturas/conexion\_sqlserver.png)
+!\[Modelo de datos][`capturas/`](capturas/dinamico\_modelo.png)
+!\[Dashboard antes de la carga][`capturas/`](capturas/dinamico\_dashboard\_antes.png)
 
 ### Prueba de actualización
 
-Para verificar que el dashboard es dinámico, se insertaron en SQL Server 300 encuestas telefónicas completas (script en `sql/`) y se actualizó el reporte:
+Para verificar que el dashboard es dinámico, se insertaron en SQL Server 300 encuestas telefónicas completas  y se actualizó el reporte:
 
 ||Antes|Después|
 |-|-|-|
@@ -43,8 +43,8 @@ Para verificar que el dashboard es dinámico, se insertaron en SQL Server 300 en
 |Facturación|$267,80 mil|$312,80 mil|
 |Margen|-$55,38 mil|-$13,38 mil|
 
-!\[Resultado de la prueba](capturas/dinamico\_prueba\_sql.png)
-!\[Dashboard después de la carga](capturas/dinamico\_dashboard\_despues.png)
+!\[Resultado de la prueba][`capturas/`](capturas/dinamico\_prueba\_sql.png)
+!\[Dashboard después de la carga][`capturas/`](capturas/dinamico\_dashboard\_despues.png)
 
 ### Medidas DAX principales
 
